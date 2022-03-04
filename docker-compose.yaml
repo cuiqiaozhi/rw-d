@@ -2,7 +2,8 @@ version: "3"
 
 services:
   web:
-    images: 108717175/tiexiu:st
+    build: ./
+    dockerfile: Dockerfile
     ports: 
     - 5123:5123
     
