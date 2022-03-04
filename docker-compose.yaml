@@ -2,8 +2,8 @@ version: "3"
 
 services:
   web:
-    build: ./
-    dockerfile: Dockerfile
+    image: okteto/gradle:6.5
+   
     ports: 
     - 5123:5123
     
