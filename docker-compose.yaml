@@ -1,7 +1,8 @@
-version: '3'
+version: "3"
+
 services:
-  myserver:
+  web:
     images: 108717175/tiexiu:st
     ports: 
-    - "5123:5123"
+    - 5123:5123
     
