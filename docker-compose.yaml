@@ -12,7 +12,7 @@ services:
      image: docker.io/erisamoe/cloudflared
       volumes:
         - ./cloudflared:/etc/cloudflared
-      command: tunnel --url tcp://app:8080
+      command: --url tcp://app:5123
       depends_on:
         - app
        networks:
