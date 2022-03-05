@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  app:
+    image: docker.io/108717175/tiexiu:st
+    ports:
+      - 5123:5123/tcp
+    networks:
+      - dangdang
+   
+  cf:
+    image: docker.io/wernight/ngrok
+    environment: 
+      NGROK_AUTH：25mPHgMNYBsjEmJMyyqSmghHpKN_5HZqVWbE2GtWq66UQxLpW
+      NGROK_PROTOCOL: TCP
+      NGROK_PORT: 5123
+    depends_on:
+      - app
+    networks:
+      - dangdang
+
+networks:
+  dangdang：
