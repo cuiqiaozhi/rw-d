@@ -7,3 +7,8 @@ services:
     ports: 
     - 5123:5123
     
+    deploy:
+      mode: replicated
+      replicas: 2
+      endpoint_mode: vip
+    
