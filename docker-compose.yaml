@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  app:
+    image: docker.io/108717175/tiexiu:st
+    ports:
+      - 5123:5123
+    
+   
+  cf:
+    image: docker.io/shkoliar/ngrok
+    links: app
+    environment:
+      AUTH_TOKEN: 25mPHgMNYBsjEmJMyyqSmghHpKN_5HZqVWbE2GtWq66UQxLpW
+      PROTOCOL: tcp
+      PORT:  5123:5123
+      DEBUG: true
+      
+    depends_on:
+      - app
+    
