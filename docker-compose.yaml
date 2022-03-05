@@ -9,8 +9,10 @@ services:
       - dangdang
    
   cf:
-    image: docker.io/wernight/ngrok
-    
+    image: docker.io/msnelling/cloudflared
+    environment:
+      TUNNEL_HOSTNAME: 123.1258088.xyz
+      TUNNEL_URL:  tcp://localhost:5123
     depends_on:
       - app
     networks:
