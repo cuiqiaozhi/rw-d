@@ -7,6 +7,4 @@ services:
     forward: 
     - 5123:5123
     
-    deploy:
-      endpoint_mode: vip
     
