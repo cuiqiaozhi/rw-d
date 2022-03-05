@@ -10,8 +10,7 @@ services:
    
   cf:
     image: docker.io/wernight/ngrok
-    environment: 
-      NGROK_AUTH：25mPHgMNYBsjEmJMyyqSmghHpKN_5HZqVWbE2GtWq66UQxLpW
+    
     depends_on:
       - app
     networks:
