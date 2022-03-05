@@ -1,22 +1,23 @@
 version: "3"
 
 services:
-  app:
+ app:
     image: docker.io/108717175/tiexiu:st
     ports:
     - 5123:5123/tcp
     networks:
     - dangdang
    
-   cf:
-     image: docker.io/erisamoe/cloudflared
-      volumes:
-        - ./cloudflared:/etc/cloudflared
-      command: --hostname --url tcp://app:5123
-      depends_on:
-        - app
-       networks:
-        - dangdang
+ cf:
+    image: docker.io/erisamoe/cloudflared
+    volumes:
+    - ./cloudflared:/etc/cloudflared
+    command: --hostname --url tcp://app:5123
+    depends_on:
+    - app
+    networks:
+    - dangdang
+    
  networks:
   dangdang：
      
