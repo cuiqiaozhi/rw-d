@@ -12,7 +12,7 @@ services:
     image: docker.io/erisamoe/cloudflared
     volumes:
       - ./cloudflared:/etc/cloudflared
-    command: --hostname 121.1258088.xyz --url udp://app:8080
+    command: --hostname 121.1258088.xyz --hello-world
     #environment:
      # TUNNEL_HOSTNAME: 123.1258088.xyz
     #  TUNNEL_URL:  udp://app:5123
