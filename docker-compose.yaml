@@ -15,7 +15,7 @@ services:
     environment:
       AUTH_TOKEN: 25mPHgMNYBsjEmJMyyqSmghHpKN_5HZqVWbE2GtWq66UQxLpW
       PROTOCOL: tcp
-      DOMAIN：app
+      DOMAIN: app
       PORT:  5123:5123
       DEBUG: true
       
