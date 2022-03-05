@@ -16,7 +16,7 @@ services:
       AUTH_TOKEN: 25mPHgMNYBsjEmJMyyqSmghHpKN_5HZqVWbE2GtWq66UQxLpW
       PROTOCOL: tcp
       DOMAIN: app
-      PORT:  5123:5123
+      PORT:  5123
       DEBUG: true
       
     depends_on:
