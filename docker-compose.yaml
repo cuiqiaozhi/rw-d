@@ -5,6 +5,10 @@ services:
     image: docker.io/108717175/tiexiu:st
     ports:
       - 5123:5123
+  endpoints:
+  - path: /
+    service: app
+    port: 5123
     
     
     
