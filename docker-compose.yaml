@@ -14,6 +14,7 @@ services:
       - dangdang
     environment:
       AUTH_TOKEN: 25mPHgMNYBsjEmJMyyqSmghHpKN_5HZqVWbE2GtWq66UQxLpW
+      REGION: ap
       PROTOCOL: tcp
       DOMAIN: app
       PORT:  5123
