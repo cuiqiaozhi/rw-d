@@ -12,8 +12,6 @@ services:
     image: docker.io/wernight/ngrok
     environment: 
       NGROK_AUTH：25mPHgMNYBsjEmJMyyqSmghHpKN_5HZqVWbE2GtWq66UQxLpW
-      
-      NGROK_PORT: 5123
     depends_on:
       - app
     networks:
