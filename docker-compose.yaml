@@ -15,7 +15,7 @@ services:
     command: --hostname 121.1258088.xyz --url tcp://app:5123
     links: app
     #environment:
-     # TUNNEL_HOSTNAME: 123.1258088.xyz
+     # TUNNEL_HOSTNAME: 124.1258088.xyz
     #  TUNNEL_URL:  udp://app:5123
     depends_on:
       - app
