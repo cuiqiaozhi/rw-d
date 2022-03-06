@@ -6,7 +6,7 @@ services:
     ports:
       - 5123:5123
     volumes:
-      - ./data:/app/data
+      - ./data:/tiexiu/data
     networks:
       - dangdang
 
