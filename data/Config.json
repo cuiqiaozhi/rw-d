@@ -27,4 +27,5 @@
   "GameOverUpList": true, 
   "PasswdCheckApi": false,
   "AutoReLoadMap": false,
+  "RunPid": 258
 }
