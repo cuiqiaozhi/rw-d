@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    image: docker.io/yiyungent/rw-hps
+    image: docker.io/108717175/tiexiu:o
     ports:
       - 5123:5123
     volumes:
